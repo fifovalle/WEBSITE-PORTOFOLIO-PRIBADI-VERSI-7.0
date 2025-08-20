@@ -4,9 +4,9 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
 // Interface
-import { parent } from "@/interfaces/parent";
+import { ParentProps } from "@/interfaces/parent-props";
 
-const PageTransition = ({ children }: parent) => {
+const PageTransition = ({ children }: ParentProps) => {
     const pathname = usePathname();
 
     return (

@@ -2,7 +2,9 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Sometype_Mono } from "next/font/google";
 // Components
+import Header from "@/components/Header";
 import MainNav from "@/components/MainNav";
+import Gradient from "@/components/Gradient";
 import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
 
@@ -26,6 +28,8 @@ export default function RootLayout({
             <body
                 className={`${someTypeMono.variable} antialiased overflow-hidden relative`}
             >
+                {/* =============== GRADIENT ================ */}
+                <Gradient />
                 {/* =============== RECTANGLES TRANSITION ================ */}
                 <RectangleTransition />
                 {/* =============== PAGE TRANSITION ================ */}
@@ -39,7 +43,9 @@ export default function RootLayout({
 
                         {/* =============== CONTENT ================ */}
                         <div className="w-full max-w-[1130px] px-[15px] mx-auto">
-                            <header>header</header>
+                            {/* ============== HEADER ================ */}
+                            <Header />
+                            {/* =============== CHILDREN ================ */}
                             {children}
                         </div>
                     </div>

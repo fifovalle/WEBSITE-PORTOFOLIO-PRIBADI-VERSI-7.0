@@ -1,22 +1,22 @@
 export const links = [
     {
-        name: "beranda",
+        name: "home",
         path: "/",
     },
     {
-        name: "tentang saya",
+        name: "about",
         path: "/about",
     },
     {
-        name: "layanan",
+        name: "services",
         path: "/services",
     },
     {
-        name: "portofolio",
+        name: "work",
         path: "/work",
     },
     {
-        name: "kontak",
+        name: "contact",
         path: "/contact",
     },
 ];
