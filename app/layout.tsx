@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Sometype_Mono } from "next/font/google";
 // Components
 import MainNav from "@/components/MainNav";
+import PageTransition from "@/components/PageTransition";
 
 const someTypeMono = Sometype_Mono({
     variable: "--font-sometypeMono",
@@ -22,18 +23,22 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${someTypeMono.variable} antialiased`}>
-                <div className="flex">
-                    {/* ============ MAIN NAV ============ */}
-                    <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
-                        <MainNav />
-                    </div>
+                {/* =============== PAGE TRANSITION ================ */}
+                <PageTransition>
+                    {/* =============== WRAPPER ================ */}
+                    <div className="flex">
+                        {/* ============ MAIN NAV ============ */}
+                        <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
+                            <MainNav />
+                        </div>
 
-                    {/* =============== CONTENT ================ */}
-                    <div className="w-full max-w-[1130px] px-[15px] mx-auto bg-pink-50/10">
-                        <header>header</header>
-                        {children}
+                        {/* =============== CONTENT ================ */}
+                        <div className="w-full max-w-[1130px] px-[15px] mx-auto bg-pink-50/10">
+                            <header>header</header>
+                            {children}
+                        </div>
                     </div>
-                </div>
+                </PageTransition>
             </body>
         </html>
     );
