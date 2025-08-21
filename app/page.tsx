@@ -105,7 +105,7 @@ const Home = () => {
                     />
 
                     {/* ============== OVERLAY GRADIENT =============== */}
-                    <div className="w-full h-[164px] absolute -bottom-28 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary"></div>
+                    <div className="w-full h-[164px] absolute -bottom-28 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary" />
                 </div>
             </div>
         </motion.section>
