@@ -59,7 +59,7 @@ const Home = () => {
                 >
                     {services.map((service, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-secondary/90 w-full h-[284px] rounded-[20px] px-[30px] py-[40px] flex flex-col justify-between">
+                            <div className="bg-secondary/90 w-full h-[284px] rounded-[20px] px-[30px] py-[40px] flex flex-col justify-between cursor-grab">
                                 <div className="flex items-center justify-between mb-12">
                                     <Image
                                         width={48}

@@ -9,7 +9,7 @@ const Stats = () => {
                 <div className="text-5xl font-bold text-accent flex">
                     <CountUp
                         end={1}
-                        delay={2}
+                        delay={3}
                         duration={5}
                         className="block w-[35px]"
                     />
@@ -25,8 +25,8 @@ const Stats = () => {
                 <div className="text-5xl font-bold text-accent flex">
                     <CountUp
                         end={7}
-                        delay={2}
-                        duration={5}
+                        delay={3}
+                        duration={7}
                         className="block w-[65px] xl:w-[35px]"
                     />
                 </div>
