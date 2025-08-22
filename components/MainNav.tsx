@@ -17,7 +17,7 @@ const MainNav = () => {
                 {/* ============= BUTTON =============== */}
                 <button className="btn btn-lg btn-tertiary mb-16">
                     <div className="flex items-center gap-3">
-                        <span>Downlaod CV</span>
+                        <span>Download CV</span>
                         <MdFileDownload className="text-xl" />
                     </div>
                 </button>

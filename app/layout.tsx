@@ -7,6 +7,7 @@ import MainNav from "@/components/MainNav";
 import Gradient from "@/components/Gradient";
 import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
+import AudioPlayer from "@/components/AudioPlayer"; // ⬅️ tambahin
 
 const someTypeMono = Sometype_Mono({
     variable: "--font-sometypeMono",
@@ -28,6 +29,9 @@ export default function RootLayout({
             <body
                 className={`${someTypeMono.variable} antialiased overflow-hidden relative`}
             >
+                {/* =============== BACKSOUND MUSIC (GLOBAL, hanya sekali) ================ */}
+                <AudioPlayer />
+
                 {/* =============== GRADIENT ================ */}
                 <Gradient />
                 {/* =============== RECTANGLES TRANSITION ================ */}

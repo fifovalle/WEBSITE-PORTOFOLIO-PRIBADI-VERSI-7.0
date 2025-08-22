@@ -162,7 +162,7 @@ const Journey = () => {
                     <DialogTitle className="sr-only">Gallery</DialogTitle>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         {modalImageAll.map((img, idx) => (
-                            <img
+                            <Image
                                 key={idx}
                                 src={img}
                                 alt={`Gallery photo ${idx + 1}`}
